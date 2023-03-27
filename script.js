@@ -1,12 +1,9 @@
-//your JS code here. If required.
-function test() {
 	const promise = new Promise((resolve,reject) => {
-		setTimeOut(()=> {
+		setTimeout(()=> {
 			resolve("Hello, world!");
 		}, 1000)
 	})
-}
 
-test().then((data)=>{
+promise.then((data)=>{
 	console.log(data)
 })
